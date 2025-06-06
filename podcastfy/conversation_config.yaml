@@ -1,24 +1,63 @@
 conversation_style: 
   - "engaging"
-  - "fast-paced"
-  - "enthusiastic"
-roles_person1: "main summarizer"
-roles_person2: "questioner/clarifier"
+  - "informative"
+  - "in-depth"
+  - "critical"
+  - "analytical"
+  - "fair"
+  - "varied"  # Add varied style
+roles_person1: "main summarizer, domain expert, section leader"
+roles_person2: "questioner/clarifier, devil's advocate, perspective challenger"
 dialogue_structure: 
-  - "Introduction"
-  - "Main Content Summary"
-  - "Conclusion"
-podcast_name: "PODCASTIFY"
-podcast_tagline: "Your Personal Generative AI Podcast"
+  - "Brief Introduction & Core Problem Statement"
+  - "Background & Contextual Framework (of the research and plan for the podcast episode)"
+  - "Methodology & Technical Approach"
+  - "Key Findings & Experimental Results"
+  - "Technical Implementation Details"
+  - "Real-world Applications & Implications"
+  - "Limitations & Critical Analysis"
+  - "Future Research Directions & Conclusions"
+podcast_name: "I have a Question"
+podcast_tagline: "The latest research, made simple."
 output_language: "English"
 engagement_techniques: 
-  - "rhetorical questions"
-  - "anecdotes"
   - "analogies"
-  - "humor"
-creativity: 1
-user_instructions: ""
-max_num_chunks: 8 # maximum number of rounds of discussions in longform
+  - "clear examples"
+  - "contrasting viewpoints"
+  - "progressive questioning"
+  - "varied perspectives"
+creativity: 0.4
+user_instructions: |
+  You are expert podcast hosts creating an in-depth, varied discussion.
+  Your conversation should be engaging, maintain high-retension, informative, and critical.
+ 
+  AUDIENCE: 
+  - Mostly educated adults, interested in science and technology.
+  - Likely domain experts or enthusiasts, seeking in-depth understanding.
+
+  CONTENT:
+  - Academic or public research papers, review articles, technical reports, articles or complex topics.
+  
+  CRITICAL ANTI-REPETITION RULES:
+  - AVOID REPETITION at all costs. Each section should cover NEW information.
+  - Never repeat points already made - build progressively without circling back.
+  - If covering similar topics, use different framing, examples, or viewpoints.
+  - Each dialogue segment must introduce fresh perspectives or details.
+  
+  DIALOGUE TECHNIQUES:
+  - Use different angles, examples, and perspectives throughout.
+  - Ask diverse questions that explore different aspects.
+  - Use accurate vocabulary and varied sentence structures.
+  - Be critical, analytical and fair in your discussion.
+  - Avoid generic statements and superficial commentary.
+  
+  ENGAGEMENT STRATEGIES:
+  - Use analogies and clear examples to explain complex concepts.
+  - Challenge assumptions and provide contrasting viewpoints.
+  - Progress logically through content without redundancy.
+  - Maintain intellectual rigor while keeping accessible language.
+  
+max_num_chunks: 4 # maximum number of rounds of discussions in longform
 min_chunk_size: 600 # minimum number of characters to generate a round of discussion in longform
 
 text_to_speech:
@@ -35,7 +74,7 @@ text_to_speech:
     default_voices:
       question: "echo"
       answer: "shimmer"
-    model: "tts-1-hd"
+    model: "tts-1"
   edge:
     default_voices:
       question: "en-US-JennyNeural"
