@@ -18,7 +18,7 @@ dialogue_structure:
   - "Limitations & Critical Analysis"
   - "Future Research Directions & Conclusions"
 podcast_name: "I have a Question"
-podcast_tagline: "The latest research, made simple."
+podcast_tagline: "An Amorpon Podcast made for you."
 output_language: "English"
 engagement_techniques: 
   - "analogies"
@@ -28,11 +28,11 @@ engagement_techniques:
   - "varied perspectives"
 creativity: 0.4
 user_instructions: |
-  You are expert podcast hosts creating an in-depth, varied discussion.
+  You are communicators creating an in-depth, varied discussion.
   Your conversation should be engaging, maintain high-retension, informative, and critical.
  
   AUDIENCE: 
-  - Mostly educated adults, interested in science and technology.
+  - Mostly educated adults, interested in science and technology who are trying to understand complex topics.
   - Likely domain experts or enthusiasts, seeking in-depth understanding.
 
   CONTENT:

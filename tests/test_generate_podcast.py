@@ -358,7 +358,7 @@ def test_generate_podcast_with_custom_llm(sample_config, default_conversation_co
         urls=urls,
         tts_model="edge",
         config=sample_config,
-        llm_model_name="gemini-1.5-pro-latest",
+        llm_model_name="gemini-2.5-flash-preview-05-20",
         api_key_label="GEMINI_API_KEY",
     )
 
